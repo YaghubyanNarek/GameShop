@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Item from './Item'
 
 export default function Items(props) {
-    const [items,setItems] = useState([
+    const [items, setItems] = useState([
         {
         image: '/game-covers/forza_5.jpeg',
         title: 'Forza Horizon 5',
@@ -57,11 +57,11 @@ export default function Items(props) {
         id: 6,
         description: 'Assassin’s Creed Valhalla — мультиплатформенная компьютерная игра в жанре action/RPG, разработанная студией Ubisoft Montreal под издательством компании Ubisoft. Является двенадцатой игрой в серии игр Assassin’s Creed.'
     }
-])
+  ])
   return (
     <div className='items'>
         {items.map(el =>(
-            <Item item={el} key={el.id} Add={props.Add}/>
+            <Item item={el} key={el.id} order={props.order} Add={props.Add}/>
         ))}
     </div>
   )

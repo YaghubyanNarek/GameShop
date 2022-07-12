@@ -61,6 +61,7 @@ header{
 
 .item{
   width: 30%;
+  min-height: 480px;
   overflow: hidden;
   background: rgb(41,42,46);
   box-shadow: 0 0 2px white, 0 0 8px white;
@@ -99,6 +100,21 @@ header{
   position: absolute;
   left:10px;
   bottom:15px;
+}
+
+.genres{
+  margin:15px 0 20px;
+}
+
+.genres span:not(:first-child) {
+  margin-left: 20px;
+}
+
+.genres span{
+  padding: 5px 8px;
+  background: rgb(68, 68, 68);
+  box-shadow: 0 0 2px white;
+  border-radius: 20px;
 }
 
 .item .item__button {
@@ -207,7 +223,7 @@ header{
 }
 
 .delete-from-basket:hover{
-  transform: scale(1.4) translateY(-8px);
+  transform: scale(1.4) translateY(-2px);
 }
 
 footer{
