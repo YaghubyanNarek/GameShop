@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { memo } from 'react'
 
-export default function Item(props) {
+export default memo(function Item(props) {
   return (
     <div className='item'>
         <img src={props.item.image} />
@@ -19,4 +19,4 @@ export default function Item(props) {
       }</button>
     </div>
   )
-}
+})

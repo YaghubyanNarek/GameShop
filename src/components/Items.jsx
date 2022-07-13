@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useRef, useState,memo } from 'react'
 import Item from './Item'
 
-export default function Items(props) {
+export default memo(function Items(props) {
     const [items, setItems] = useState([
         {
         image: '/game-covers/forza_5.jpeg',
@@ -65,4 +65,4 @@ export default function Items(props) {
         ))}
     </div>
   )
-}
+})

@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {memo} from 'react'
 import { FaTrash } from 'react-icons/fa'
-export default function ShowBasket(props) {
+export default memo(function ShowBasket(props) {
   return (
     <div className='Basket'>
         <img src={props.order.image} />
@@ -16,4 +16,4 @@ export default function ShowBasket(props) {
         />
     </div>
   )
-}
+})
