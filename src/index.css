@@ -291,7 +291,7 @@ header{
   height: 17px;
   border: 1px solid white;
   background: transparent;
-  border-radius: 3.5px;
+  border-radius: 50%;
   position: relative;
   overflow: hidden;
 }
